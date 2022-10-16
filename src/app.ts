@@ -14,10 +14,6 @@ app.get('/env', (req: Request, res: Response) => {
     res.json(process.env);
 });
 
-app.get('/env1', (req: Request, res: Response) => {
-    res.json(process.env);
-});
-
 app.get('/health', (req: Request, res: Response) => {
     res.json({'health': 'OK'});
 });
